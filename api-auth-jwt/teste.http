@@ -1,0 +1,28 @@
+POST http://localhost:3000/api/user/register
+content-type: application/json
+
+{
+  "name": "User 1",
+  "email": "user1@email.com",
+  "password": "123456"
+}
+
+###
+
+POST http://localhost:3000/api/user/login
+content-type: application/json
+
+{
+  "email": "user2@email.com",
+  "password": "123456"
+}
+
+
+###
+
+GET http://localhost:3000/api/post
+
+###
+
+GET http://localhost:3000/api/post
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTY1MzgxZTg0N2U2YTEzYjQ3YTE0ZjAiLCJpYXQiOjE1ODM3MDYzMjd9.YCgL87bRJF-ID558IrUMPgTCYFBX4Hq4d33xOcY3PKU 

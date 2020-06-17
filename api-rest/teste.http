@@ -1,0 +1,30 @@
+GET http://localhost:3000/post
+
+###
+
+GET http://localhost:3000/post/5e6544796cc131159c1fdd96
+
+###
+
+POST http://localhost:3000/post
+content-type: application/json
+
+{
+  "title": "My first post",
+  "description": "My love life is very good"
+}
+
+
+###
+
+DELETE http://localhost:3000/post/5e6544796cc131159c1fdd96
+
+###
+
+PATCH http://localhost:3000/post/5e65447c6cc131159c1fdd97
+content-type: application/json
+
+{
+  "title": "My first post",
+  "description": "My love life is very good"
+}
