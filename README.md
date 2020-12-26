@@ -1,2 +1,2 @@
-# node
+# nodejs
 Repositório de estudos sobre **Nodejs**
