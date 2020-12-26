@@ -1,0 +1,7 @@
+POST http://localhost:3000/pet
+Content-Type: application/json
+
+{
+  "nome": "Harry",
+  "imagem": "./assets/salsicha.jpg"
+}

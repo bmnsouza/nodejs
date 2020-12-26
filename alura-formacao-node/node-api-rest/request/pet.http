@@ -1,0 +1,33 @@
+GET http://localhost:4000/pets
+
+###
+
+GET http://localhost:4000/pets/pet/5
+
+###
+
+POST http://localhost:4000/pets/pet
+content-type: application/json
+
+{
+  "nome": "Lindinho",
+  "donoId": 3,
+  "tipo": "Passarinho",
+  "observacoes": "Legal"
+}
+
+###
+
+PUT http://localhost:4000/pets/pet/6
+content-type: application/json
+
+{
+  "nome": "Lindo",
+  "donoId": 4,
+  "tipo": "Águia",
+  "observacoes": "Rápida"
+}
+
+###
+
+DELETE http://localhost:4000/pets/pet/6

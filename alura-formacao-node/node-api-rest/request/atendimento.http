@@ -1,0 +1,35 @@
+GET http://localhost:4000/atendimentos
+
+###
+
+GET http://localhost:4000/atendimentos/atendimento/6
+
+###
+
+POST http://localhost:4000/atendimentos/atendimento
+content-type: application/json
+
+{
+  "clienteId": 4,
+  "petId": 5,
+  "servicoId": 1,
+  "status": "Agendado",
+  "observacoes": "Aguardando Pagamento"
+}
+
+###
+
+PUT http://localhost:4000/atendimentos/atendimento/6
+content-type: application/json
+
+{
+  "clienteId": 2,
+  "petId": 3,
+  "servicoId": 2,
+  "status": "Fim",
+  "observacoes": "Legal"
+}
+
+###
+
+DELETE http://localhost:4000/atendimentos/atendimento/6

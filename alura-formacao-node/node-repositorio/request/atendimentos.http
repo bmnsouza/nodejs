@@ -1,0 +1,15 @@
+POST http://localhost:3000/atendimentos
+Content-Type: application/json
+
+{
+  "cliente": "10020030020",
+  "pet": "Harry",
+  "servico": "Tosa",
+  "data": "25/02/2022",
+  "status": "Agendado",
+  "observacoes": "Idoso"
+}
+
+###
+
+GET http://localhost:3000/atendimentos/1

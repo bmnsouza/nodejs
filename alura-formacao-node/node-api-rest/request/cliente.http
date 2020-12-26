@@ -1,0 +1,29 @@
+GET http://localhost:4000/clientes
+
+###
+
+GET http://localhost:4000/clientes/cliente/5
+
+###
+
+POST http://localhost:4000/clientes/cliente
+content-type: application/json
+
+{
+  "nome": "Bruno",
+  "cpf": "56789101234"
+}
+
+###
+
+PUT http://localhost:4000/clientes/cliente/6
+content-type: application/json
+
+{
+  "nome": "Bruno Marcel",
+  "cpf": "27/03/2020"
+}
+
+###
+
+DELETE http://localhost:4000/clientes/cliente/6

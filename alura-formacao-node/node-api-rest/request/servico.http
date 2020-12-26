@@ -1,0 +1,31 @@
+GET http://localhost:4000/servicos
+
+###
+
+GET http://localhost:4000/servicos/servico/2
+
+###
+
+POST http://localhost:4000/servicos/servico
+content-type: application/json
+
+{
+  "nome": "Banho Quente",
+  "preco": 10.80,
+  "descricao": "Banho com água quente"
+}
+
+###
+
+PUT http://localhost:4000/servicos/servico/2
+content-type: application/json
+
+{
+  "nome": "Banho",
+  "preco": 55.30,
+  "descricao": "Banho com água quente e shampoo"
+}
+
+###
+
+DELETE http://localhost:4000/servicos/servico/4
